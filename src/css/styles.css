@@ -129,6 +129,7 @@ ul {
 }
 
 .loader {
+  display: none;
   margin: 0 auto;
   transform: rotateZ(45deg);
   perspective: 1000px;
