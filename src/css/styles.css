@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 ul {
@@ -101,11 +102,35 @@ ul {
   height: 200px;
 }
 
+.btn-more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  width: 125px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background-color: #6c8cff;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
 .loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateZ(45deg);
+  margin: 0 auto;
+  transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
   width: 48px;

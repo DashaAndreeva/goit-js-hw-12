@@ -8,6 +8,7 @@ export const refs = {
   button: document.querySelector('.button'),
   gallery: document.querySelector('.gallery'),
   loader: document.querySelector('.loader'),
+  buttonLoader: document.querySelector('.btn-more'),
 };
 
 export function photosTemplate(photos) {
@@ -30,7 +31,7 @@ export function photosTemplate(photos) {
 
 export function renderPhotos(photos) {
   const galleryMarkup = photosTemplate(photos);
-  refs.gallery.innerHTML = galleryMarkup;
+  refs.gallery.insertAdjacentHTML('beforeend', galleryMarkup);
 
   if (typeof lightBox !== 'undefined') {
     lightBox.refresh();
